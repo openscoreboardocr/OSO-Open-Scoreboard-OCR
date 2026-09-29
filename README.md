@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="assets/oso-logo.png" alt="OSO Open Scoreboard OCR" width="180">
+  <img src="assets/oso-logo.png" alt="OSO Open Scoreboard OCR logo" width="180">
 </p>
 
-<h1 align="center">OSO – Open Scoreboard OCR</h1>
+<h1 align="center">OSO – Open Scoreboard OCR for vMix, OBS & Live Sports Broadcasting</h1>
 
 <p align="center">
-  A lightweight Windows OCR tool for extracting scoreboard clocks, scores and other numeric data for live broadcast workflows.
+  Free Windows scoreboard OCR software for extracting scoreboard clocks, scores and numeric data from cameras, capture devices, images and video.
 </p>
 
 <p align="center">
@@ -13,6 +13,7 @@
   <img src="https://img.shields.io/badge/Status-Beta-orange">
   <img src="https://img.shields.io/badge/vMix-Friendly-1688F0">
   <img src="https://img.shields.io/badge/OBS-Friendly-302E31?logo=obsstudio&logoColor=white">
+  <img src="https://img.shields.io/badge/OCR-Scoreboard-blue">
 </p>
 
 <p align="center">
@@ -26,48 +27,46 @@
 </p>
 
 <p align="center">
-  <img src="assets/oso-screenshot.png" alt="OSO Open Scoreboard OCR Screenshot" width="100%">
+  <img src="assets/oso-screenshot.png" alt="OSO Open Scoreboard OCR Windows software for vMix and live sports broadcasting" width="100%">
 </p>
 
 ---
 
-## About
+## What is OSO?
 
-**OSO – Open Scoreboard OCR** is an independent Windows application designed to read information from physical scoreboards using OCR and make that data available for live broadcast workflows.
+**OSO – Open Scoreboard OCR** is a free Windows scoreboard OCR tool designed for live sports broadcasting, streaming and video production.
 
-The project started as a personal tool for smaller productions where dedicated scoreboard data systems are not always available or affordable.
+It reads information directly from a physical scoreboard using OCR and converts the recognized values into data that can be used by broadcast graphics systems.
 
-OSO is currently in **early beta** and is still being actively developed.
+OSO can recognize:
 
-The main goal is to provide a simple and accessible way to extract scoreboard information and send it to graphics or broadcast systems without requiring expensive dedicated hardware.
+- Scoreboard clocks
+- Scores
+- Fouls
+- Other numeric scoreboard values
+- Tenths of a second
 
----
+The recognized data can be exported as **XML** or **JSON**, making it suitable for workflows using:
 
-## Features
+- vMix
+- OBS Studio
+- Broadcast graphics
+- Data-driven titles
+- Custom live production systems
 
-- OCR reading of scoreboard clocks
-- Support for tenths of a second
-- Temporal anti-jump filtering
-- Perspective correction
-- Adjustable ROI selection
-- Multiple OCR image-processing controls
-- Extra ROIs for additional numeric fields
-- Score reading
-- Fouls reading
-- Custom numeric fields
-- XML output
-- JSON output
-- vMix-friendly Data Source workflow
-- OBS-friendly external data workflow
-- Camera / capture device input
-- Image input
-- Video input for testing
-- Custom-trained OCR model for scoreboard digits
-- Windows x64 installer
+OSO is currently an **early beta** and is still actively being developed.
 
 ---
 
-## Broadcast Workflow
+## Scoreboard OCR for vMix
+
+OSO can be used as a scoreboard OCR solution for **vMix live productions**.
+
+The application reads the physical scoreboard from a camera, video source or capture device and exports the recognized values to XML or JSON.
+
+These values can then be connected to **vMix Data Sources** and used directly inside GT Titles or custom scoreboard graphics.
+
+Typical workflow:
 
 ```text
 Physical Scoreboard
@@ -78,4 +77,6 @@ OSO – Open Scoreboard OCR
         ↓
 XML / JSON
         ↓
-vMix / Graphics / Broadcast Workflow
+vMix Data Sources
+        ↓
+GT Title / Broadcast Graphics
