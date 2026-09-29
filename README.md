@@ -46,7 +46,6 @@ The main goal is to provide a simple and accessible way to extract scoreboard in
 ## Features
 
 - OCR reading of scoreboard clocks
-- Support for `MM:SS` clock formats
 - Support for tenths of a second
 - Temporal anti-jump filtering
 - Perspective correction
